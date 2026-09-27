@@ -1,4 +1,4 @@
-name: Decode media b64 to JPEG
+name: Decode media
 on:
   workflow_dispatch:
   push:
