@@ -36,9 +36,9 @@ if not changed:
     print('no changes')
     raise SystemExit(0)
 
-subprocess.check_call(['git', 'config', 'user.name', 'inimitato-buffer-bot'])
-subprocess.check_call(['git', 'config', 'user.email', 'bot@inimitato.local'])
+subprocess.check_call(['git', 'config', 'user.name', 'media-bot'])
+subprocess.check_call(['git', 'config', 'user.email', 'bot@localhost'])
 subprocess.check_call(['git', 'add', '--'] + changed)
-subprocess.check_call(['git', 'commit', '-m', 'Decode staged Buffer stills to JPEG'])
+subprocess.check_call(['git', 'commit', '-m', 'Decode staged assets'])
 subprocess.check_call(['git', 'push'])
 print('pushed', changed)
